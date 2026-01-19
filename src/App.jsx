@@ -9,40 +9,46 @@ import Categories from "./Components/Categories/Categories";
 import AboutUs from "./Components/AboutUs/AboutUs";
 
 export default function App() {
-  
-  const routes = createBrowserRouter([
+  const routes = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Layout />,
+        children: [
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: "categories",
+            element: <Categories />,
+          },
+          {
+            path: "contact-us",
+            element: <ContactUs />,
+          },
+          {
+            path: "area",
+            element: <Area />,
+          },
+          {
+            path: "about-us",
+            element: <AboutUs />,
+          },
+          {
+            path: "*",
+            element: <Notfound />,
+          },
+        ],
+      },
+    ],
     {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          index: true,
-          element: <Home />,
-        },
-        {
-          path:"categories",
-          element: <Categories/>,
-        },
-        {
-          path:"contact-us",
-          element: <ContactUs/>,
-        },
-        {
-          path:"area",
-          element: <Area/>,
-        },
-        {
-          path:"about-us",
-          element: <AboutUs/>,
-        },
-        {
-          path:"*",
-          element: <Notfound/>,
-        },
-      ],
+      basename: "/Crunshy-Hub",
     },
-  ]);
-  return <div>
-    <RouterProvider router={routes} />
-  </div>;
+  );
+  return (
+    <div>
+      <RouterProvider router={routes} />
+    </div>
+  );
 }
