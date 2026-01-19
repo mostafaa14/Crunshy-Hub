@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function HeroSection() {
   return (
     <section
-      className="relative lg:h-screen lg:flex lg:items-center lg:justify-center"
+      className="relative lg:h-screen lg:flex lg:items-center lg:justify-center overflow-hidden"
       style={{
         backgroundImage: `url(${heroImage})`,
         backgroundSize: "cover",

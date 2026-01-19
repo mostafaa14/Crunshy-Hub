@@ -6,7 +6,7 @@ import dish2 from "../../assets/img/deshes2.png";
 
 export default function SpecialDishes() {
   return (
-    <section className="w-full bg-white py-32">
+    <section className="w-full bg-white py-32 overflow-hidden">
       <div className="mx-auto max-w-6xl px-4">
         {/* Section Title */}
         <div className="mb-24 text-center">
