@@ -51,8 +51,8 @@ export default function HeroSection() {
             className="mt-6 flex justify-center gap-4"
           >
             {/* Primary Button */}
-            <a
-              href="#menu"
+            <Link
+              to="#menu"
               className="
                 rounded-md
                 border border-transparent
@@ -67,11 +67,11 @@ export default function HeroSection() {
               "
             >
               View Menu
-            </a>
+            </Link>
 
             {/* Secondary Button */}
-            <a
-              href="/about-us"
+            <Link
+              to="/about-us"
               className="
                 rounded-md
                 border border-[#ffb606]
@@ -84,7 +84,7 @@ export default function HeroSection() {
               "
             >
               About Us
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
