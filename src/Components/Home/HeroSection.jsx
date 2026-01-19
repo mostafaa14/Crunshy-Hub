@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import heroImage from "../../assets/img/banner-bg.jpg";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
